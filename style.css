@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://img.magnific.com/free-photo/type-entertainment-complex-popular-resort-with-pools-water-parks-turkey-with-more-than-5-million-visitors-year-amara-dolce-vita-luxury-hotel-resort-tekirova-kemer_146671-18728.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #1c2b3a;
+}
+
+.navbar {
+  background: #0b3866;
+  color: #ffffff;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.brand-icon {
+  font-size: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: #cfe0f2;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-btn:hover {
+  background: #124a80;
+  color: #ffffff;
+}
+
+.nav-btn.active {
+  background: #ffffff;
+  color: #0b3866;
+  font-weight: 600;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.page-section {
+  display: none;
+}
+
+.page-section.active {
+  display: block;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  background-color: #e9edf2;
+  color: #00060b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+  margin-color: #000000;
+}
+
+.stat-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border-left: 5px solid #0b3866;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card.stat-available {
+  border-left-color: #1a8a4a;
+}
+
+.stat-card.stat-occupied {
+  border-left-color: #c0392b;
+}
+
+.stat-card.stat-bookings {
+  border-left-color: #d9a017;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #667385;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0b3866;
+}
+
+.notice-box {
+  min-height: 20px;
+  color: #1a8a4a;
+  font-weight: 600;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #cfd6e0;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.toolbar input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.toolbar input:focus,
+.toolbar select:focus {
+  outline: none;
+  border-color: #0b3866;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.room-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.room-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.room-card-body {
+  padding: 14px;
+}
+
+.room-card-body h3 {
+  font-size: 16px;
+  color: #0b3866;
+  margin-bottom: 4px;
+}
+
+.room-card-body p {
+  font-size: 13px;
+  color: #556072;
+  margin-bottom: 4px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 6px 0 10px 0;
+}
+
+.status-Available {
+  background: #e2f6e9;
+  color: #1a8a4a;
+}
+
+.status-Occupied {
+  background: #fbe4e1;
+  color: #c0392b;
+}
+
+.status-Reserved {
+  background: #fdf3d9;
+  color: #a3760f;
+}
+
+.room-card-body button {
+  width: 100%;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-book {
+  background: #0b3866;
+}
+
+.btn-book:hover {
+  background: #124a80;
+}
+
+.btn-checkin {
+  background: #a3760f;
+}
+
+.btn-checkin:hover {
+  background: #8a6209;
+}
+
+.btn-checkout {
+  background: #1a8a4a;
+}
+
+.btn-checkout:hover {
+  background: #15703b;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eef0f4;
+  font-size: 14px;
+}
+
+.data-table th {
+  background: #0b3866;
+  color: #ffffff;
+}
+
+.empty-row {
+  text-align: center;
+  color: #8a94a3;
+  padding: 20px;
+}
+
+.about-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.about-card p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 56, 102, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 360px;
+}
+
+.modal-box h3 {
+  color: #0b3866;
+  margin-bottom: 14px;
+}
+
+.modal-box label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #556072;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cfd6e0;
+  margin-bottom: 18px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-secondary {
+  background: #e9edf2;
+  color: #1c2b3a;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #0b3866;
+  color: #ffffff;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="brand">
+      <span class="brand-icon">&#127976;</span>
+      <span class="brand-name">Grand View Hotel</span>
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <button class="nav-btn active" data-section="dashboard">Dashboard</button>
+      <button class="nav-btn" data-section="rooms">Rooms</button>
+      <button class="nav-btn" data-section="bookings">Bookings</button>
+      <button class="nav-btn" data-section="guests">Guests</button>
+      <button class="nav-btn" data-section="about">About</button>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="page-section active">
+      <h1 class="section-heading">Dashboard</h1>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-label">Total Rooms</p>
+          <p class="stat-value" id="statTotal">0</p>
+        </div>
+        <div class="stat-card stat-available">
+          <p class="stat-label">Available Rooms</p>
+          <p class="stat-value" id="statAvailable">0</p>
+        </div>
+        <div class="stat-card stat-occupied">
+          <p class="stat-label">Occupied Rooms</p>
+          <p class="stat-value" id="statOccupied">0</p>
+        </div>
+        <div class="stat-card stat-bookings">
+          <p class="stat-label">Today's Bookings</p>
+          <p class="stat-value" id="statBookings">0</p>
+        </div>
+      </div>
+      <div class="notice-box" id="noticeBox"></div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="page-section">
+      <h1 class="section-heading">Room Management</h1>
+
+      <div class="toolbar">
+        <input type="text" id="searchInput" placeholder="Search by room number or type..." />
+        <select id="filterSelect">
+          <option value="All">All Rooms</option>
+          <option value="Available">Available</option>
+          <option value="Occupied">Occupied</option>
+          <option value="Reserved">Reserved</option>
+        </select>
+      </div>
+
+      <div class="room-grid" id="roomGrid"></div>
+    </section>
+
+    <!-- Bookings Section -->
+    <section id="bookings" class="page-section">
+      <h1 class="section-heading">Recent Bookings</h1>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Guest Name</th>
+            <th>Room No.</th>
+            <th>Room Type</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="bookingsTableBody">
+          <tr><td colspan="4" class="empty-row">No bookings yet. Book a room from the Rooms tab.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Guests Section -->
+    <section id="guests" class="page-section">
+      <h1 class="section-heading">Current Guests</h1>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Guest Name</th>
+            <th>Room No.</th>
+            <th>Check-in Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="guestsTableBody">
+          <tr><td colspan="4" class="empty-row">No guests checked in yet.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="page-section">
+      <h1 class="section-heading">About This Project</h1>
+      <div class="about-card">
+        <p>Grand View Hotel Management System is a simple front-end dashboard built to manage
+        room availability, bookings, check-ins and check-outs for a small hotel.</p>
+        <p>Built using plain HTML, CSS and JavaScript, with room data stored in a JSON file
+        and loaded using the Fetch API.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <h3>Book Room <span id="modalRoomNumber"></span></h3>
+      <label for="guestNameInput">Guest Name</label>
+      <input type="text" id="guestNameInput" placeholder="Enter guest full name" />
+      <div class="modal-actions">
+        <button id="modalCancelBtn" class="btn-secondary">Cancel</button>
+        <button id="modalConfirmBtn" class="btn-primary">Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

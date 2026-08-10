@@ -1,0 +1,98 @@
+[
+  {
+    "roomNumber": 101,
+    "type": "Standard Room",
+    "price": 2200,
+    "capacity": 2,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=400"
+  },
+  {
+    "roomNumber": 102,
+    "type": "Standard Room",
+    "price": 2200,
+    "capacity": 2,
+    "status": "Occupied",
+    "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400"
+  },
+  {
+    "roomNumber": 103,
+    "type": "Deluxe Room",
+    "price": 3500,
+    "capacity": 3,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400"
+  },
+  {
+    "roomNumber": 104,
+    "type": "Deluxe Room",
+    "price": 3500,
+    "capacity": 3,
+    "status": "Reserved",
+    "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=400"
+  },
+  {
+    "roomNumber": 201,
+    "type": "Executive Room",
+    "price": 4800,
+    "capacity": 3,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=400"
+  },
+  {
+    "roomNumber": 202,
+    "type": "Executive Room",
+    "price": 4800,
+    "capacity": 3,
+    "status": "Occupied",
+    "image": "https://images.unsplash.com/photo-1591088398332-8a7791972843?w=400"
+  },
+  {
+    "roomNumber": 203,
+    "type": "Family Room",
+    "price": 5200,
+    "capacity": 5,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=400"
+  },
+  {
+    "roomNumber": 204,
+    "type": "Family Room",
+    "price": 5200,
+    "capacity": 5,
+    "status": "Reserved",
+    "image": "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=400"
+  },
+  {
+    "roomNumber": 301,
+    "type": "Suite",
+    "price": 7500,
+    "capacity": 4,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=400"
+  },
+  {
+    "roomNumber": 302,
+    "type": "Suite",
+    "price": 7500,
+    "capacity": 4,
+    "status": "Occupied",
+    "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=400"
+  },
+  {
+    "roomNumber": 303,
+    "type": "Standard Room",
+    "price": 2200,
+    "capacity": 2,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1518733057094-95b53143d2a7?w=400"
+  },
+  {
+    "roomNumber": 304,
+    "type": "Executive Room",
+    "price": 4800,
+    "capacity": 3,
+    "status": "Available",
+    "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=400"
+  }
+]
